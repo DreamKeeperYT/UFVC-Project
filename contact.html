@@ -3,56 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | UFVCoin</title>
+<title>Contact UFVWealth & UFVCoin Team</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <header>
-<img src="images/logo.png" alt="UFVC Logo" class="logo">
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="rewards.html">Rewards</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
-        <li><a href="legal.html">Legal</a></li>
-        <li><a href="tutorial.html">Tutorial</a></li>
-        <li><a href="video.html">Video</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-    </ul>
-</nav>
+    <img src="images/ufv-logo.jpeg" alt="UFV Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ethics.html">Ethics</a></li>
+            <li><a href="legal.html">Legal</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 <section class="hero">
-<h1>Contact UFVCoin Team</h1>
-<p>Have questions? Reach out to us!</p>
+<h1>Contact UFVWealth & UFVCoin Team</h1>
+<p>Questions about your coins, rewards, or the platform? Reach out and we’ll guide you!</p>
 </section>
 
 <section class="overview">
+<div class="contact-info">
+    <div>
+        <i class="fa-solid fa-envelope"></i>
+        <p>Email: <a href="mailto:support@ufvcoin.ca">support@ufvcoin.ca</a></p>
+    </div>
+    <div>
+        <i class="fa-solid fa-phone"></i>
+        <p>Phone: +1 (604) 555-UFVC</p>
+    </div>
+    <div>
+        <i class="fa-brands fa-discord"></i>
+        <p>Join our UFVCoin community on Discord!</p>
+    </div>
+</div>
+
+<h2>Send Us a Message</h2>
 <form id="contactForm">
     <label for="name">Full Name:</label>
-    <input type="text" id="name" required>
+    <input type="text" id="name" placeholder="Your Name" required>
 
     <label for="email">Email:</label>
-    <input type="email" id="email" required>
+    <input type="email" id="email" placeholder="you@ufv.ca" required>
 
     <label for="message">Message:</label>
-    <textarea id="message" rows="5" required></textarea>
+    <textarea id="message" rows="5" placeholder="Ask about UFVCoin, rewards, staking, or volunteering..." required></textarea>
 
-    <button type="submit" class="btn">Send Message</button>
+    <button type="submit" class="btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
 </form>
 <p id="contactMessage"></p>
+
+<h2>Quick Tips</h2>
+<ul>
+    <li>Check your dashboard first for coin balances and rewards.</li>
+    <li>Refer to our tutorial for staking and investment guidance.</li>
+    <li>Volunteering and A+ achievements can earn bonus coins!</li>
+</ul>
 </section>
 
 <script>
 document.getElementById('contactForm').addEventListener('submit', function(e){
     e.preventDefault();
-    document.getElementById('contactMessage').textContent = "Thank you! Your message has been sent.";
+    document.getElementById('contactMessage').textContent = "Thank you! Your message has been sent. We’ll get back to you soon.";
     document.getElementById('contactMessage').style.color = 'green';
     document.getElementById('contactForm').reset();
 });
@@ -61,5 +85,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
 <footer>
 <p>&copy; 2026 UFVCoin Project | Built by Group 8</p>
 </footer>
+<script src="js/script.js"></script>
+<script src="js/contact.js"></script>
 </body>
 </html>

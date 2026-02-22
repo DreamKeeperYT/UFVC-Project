@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up | UFVCoin</title>
+<title>Sign Up | UFVWealth & UFVCoin</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <header>
-    <img src="images/logo.png" alt="UFVC Logo" class="logo">
+    <img src="images/ufv-logo.jpeg" alt="UFV Logo" class="logo">
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -28,44 +29,36 @@
 </header>
 
 <main>
-    <section class="hero">
-        <h1>Sign Up for UFVCoin</h1>
-        <p>Use your UFV email to join the platform and start investing today!</p>
-    </section>
+<section class="hero">
+<h1>Join UFVWealth & Start Investing in UFVCoin</h1>
+<p>Secure, ethical, and community-focused crypto investing for UFV students, staff, and alumni.</p>
+</section>
 
-    <section class="form-section">
-        <form id="signupForm">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" required>
+<section class="form-section">
+<form id="signupForm">
+    <label for="name"><i class="fa-solid fa-user"></i> Full Name:</label>
+    <input type="text" id="name" placeholder="Pranav Garg" required>
 
-            <label for="email">UFV Email:</label>
-            <input type="email" id="email" placeholder="name@student.ufv.ca" required>
+    <label for="email"><i class="fa-solid fa-envelope"></i> UFV Email: 
+        <span title="Only @student.ufv.ca or staff UFV emails allowed"><i class="fa-solid fa-circle-info"></i></span>
+    </label>
+    <input type="email" id="email" placeholder="name@student.ufv.ca" required>
 
-            <label for="amount">Investment Amount (CAD):</label>
-            <input type="number" id="amount" min="1" required>
+    <label for="amount"><i class="fa-solid fa-coins"></i> Investment Amount (CAD):</label>
+    <input type="number" id="amount" min="1" value="100" required>
 
-            <button type="submit" class="btn">Register</button>
-        </form>
-        <p id="signupMessage"></p>
-    </section>
+    <p id="coinPreview">You will receive 0 UFVCoin</p>
+
+    <button type="submit" class="btn">Register</button>
+</form>
+<p id="signupMessage"></p>
+</section>
 </main>
 
 <footer>
-    <p>&copy; 2026 UFVCoin Project | Built by Group 8</p>
+<p>&copy; 2026 UFVCoin Project | Built by Group 8</p>
 </footer>
-
-<script>
-document.getElementById('signupForm').addEventListener('submit', function(e){
-    e.preventDefault();
-    const email = document.getElementById('email').value;
-    if(!email.endsWith('@student.ufv.ca')){
-        document.getElementById('signupMessage').textContent = 'Only UFV email addresses are allowed.';
-        document.getElementById('signupMessage').style.color = 'red';
-        return;
-    }
-    document.getElementById('signupMessage').textContent = 'Registration successful! Welcome to UFVCoin.';
-    document.getElementById('signupMessage').style.color = 'green';
-});
-</script>
+<script src="js/script.js"></script>
+<script src="js/signup.js"></script>
 </body>
 </html>

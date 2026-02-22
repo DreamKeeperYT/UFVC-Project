@@ -3,56 +3,66 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dashboard | UFVCoin</title>
+<title>Dashboard | UFVWealth & UFVCoin</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header>
-    <img src="images/logo.png" alt="UFVC Logo" class="logo">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="how-it-works.html">How It Works</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="dashboard.html" class="active">Dashboard</a></li>
-            <li><a href="rewards.html">Rewards</a></li>
-            <li><a href="community.html">Community</a></li>
-            <li><a href="ethics.html">Ethics</a></li>
-            <li><a href="legal.html">Legal</a></li>
-            <li><a href="tutorial.html">Tutorial</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <img src="images/ufv-logo.jpeg" alt="UFV Logo" class="logo">
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="signup.html">Sign Up</a></li>
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="rewards.html">Rewards</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="ethics.html">Ethics</a></li>
+        <li><a href="legal.html">Legal</a></li>
+        <li><a href="tutorial.html">Tutorial</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 </header>
 
 <main>
 <section class="hero">
-    <h1>Your UFVCoin Dashboard</h1>
-    <p>Track your coins, investments, and rewards.</p>
+    <h1>Welcome to UFVWealth</h1>
+    <p>Your platform for managing UFVCoin: track balances, staking, and rewards all in one place.</p>
 </section>
 
 <section class="overview">
-    <h2>Coin Balance</h2>
-    <p id="balance">Current Coins: 100 UFVC</p>
+    <h2>UFVCoin Balance</h2>
+    <p id="balance">You currently have <strong>100 UFVC</strong> in UFVWealth.</p>
+    <p>Use UFVCoin through UFVWealth for tuition, parking, cafeteria purchases, raffles, and scholarships.</p>
 
     <h2>Recent Activity</h2>
     <ul id="activity">
-        <li>Purchased 50 UFVC</li>
-        <li>Earned 10 UFVC via volunteering</li>
-        <li>Used 20 UFVC for cafeteria</li>
+        <li><strong>Mar 1:</strong> Purchased 50 UFVC via UFVWealth</li>
+        <li><strong>Mar 3:</strong> Earned 10 UFVC for volunteering</li>
+        <li><strong>Mar 5:</strong> Spent 20 UFVC at the cafeteria</li>
     </ul>
 
     <h2>Staking Progress</h2>
-    <div style="background:#ccc; width:100%; border-radius:10px;">
-        <div style="width:40%; background:#1e3a8a; color:white; text-align:center; padding:5px 0; border-radius:10px;">40% Staked</div>
+    <p>Stake your UFVCoin through UFVWealth to earn extra rewards and unlock bonuses.</p>
+    <div class="progress-bar" style="border:1px solid #ccc; width:100%; height:30px; border-radius:5px; overflow:hidden;">
+    <div class="progress" style="background-color:#4caf50; width:0%; height:100%; text-align:center; color:white; line-height:30px;">0% Staked</div>
     </div>
+
+    <h2>Upcoming Rewards</h2>
+    <ul>
+        <li>🎓 Academic achievement bonuses (A+ rewards system)</li>
+        <li>🎁 Monthly raffles: laptops, accessories, and more</li>
+        <li>💰 Extra coins for volunteering and campus events</li>
+    </ul>
 </section>
 </main>
-
 <footer>
 <p>&copy; 2026 UFVCoin Project | Built by Group 8</p>
 </footer>
+<script src="js/script.js"></script>
+<script src="js/dashboard.js"></script>
 </body>
 </html>

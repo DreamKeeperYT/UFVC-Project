@@ -3,12 +3,78 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rewards | UFVCoin</title>
+<title>Rewards | UFVWealth & UFVCoin</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+/* Reward page specific styling */
+.claim-rewards, .earn-coins {
+    margin: 2rem auto;
+    max-width: 1000px;
+}
+
+.reward-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.reward-card:hover {
+    transform: scale(1.02);
+}
+
+.reward-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reward-info i {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.reward-cost {
+    font-weight: bold;
+    background-color: #e0f7fa;
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+}
+
+.reward-card button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.reward-card button:disabled {
+    cursor: not-allowed;
+    background-color: #ccc;
+    color: #666;
+}
+
+.reward-card button:not(:disabled) {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reward-card button:not(:disabled):hover {
+    background-color: #45a049;
+}
+</style>
 </head>
 <body>
 <header>
-<img src="images/logo.png" alt="UFVC Logo" class="logo">
+    <img src="images/ufv-logo.jpeg" alt="UFV Logo" class="logo">
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -29,21 +95,37 @@
 
 <main>
 <section class="hero">
-<h1>Rewards & Benefits</h1>
-<p>Use your UFVCoin for amazing perks!</p>
+<h1>UFVCoin Rewards</h1>
+<p>Use your UFVCoin to claim exclusive perks and benefits!</p>
 </section>
 
 <section class="overview">
+<h2>Your Coin Balance</h2>
+<p id="balance" style="font-size:1.2rem;"><strong>10 UFVCoin</strong></p>
+</section>
+
+<section class="claim-rewards">
+<h2>Claimable Rewards</h2>
+<div id="rewardsList">
+    <!-- Cards populated dynamically -->
+</div>
+</section>
+
+<section class="earn-coins">
+<h2>How to Earn UFVCoin</h2>
 <ul>
-    <li>Tuition and parking discounts</li>
-    <li>Cafeteria and library purchases</li>
-    <li>Scholarships & bursaries</li>
-    <li>Exclusive raffles: laptops, accessories, and more</li>
-    <li>Volunteer & academic achievements earn extra coins</li>
+    <li>💰 <strong>Invest & Stake:</strong> Earn interest on staked UFVCoin.</li>
+    <li>🎓 <strong>Academic Achievements:</strong> Bonus coins for high grades (A+ rewards).</li>
+    <li>🤝 <strong>Volunteer Work:</strong> Earn coins by participating in campus volunteering events.</li>
+    <li>🎉 <strong>Campus Engagement:</strong> Join events and activities to earn extra coins.</li>
 </ul>
 </section>
+
 <footer>
 <p>&copy; 2026 UFVCoin Project | Built by Group 8</p>
 </footer>
+
+<script src="js/script.js"></script>
+<script src="js/rewards.js"></script>
 </body>
 </html>

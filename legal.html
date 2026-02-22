@@ -3,44 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legal & Security | UFVCoin</title>
+<title>Legal & Security | UFVWealth & UFVCoin</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 <header>
-<img src="images/logo.png" alt="UFVC Logo" class="logo">
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="how-it-works.html">How It Works</a></li>
-        <li><a href="signup.html">Sign Up</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="rewards.html">Rewards</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="ethics.html">Ethics</a></li>
-        <li><a href="legal.html" class="active">Legal</a></li>
-        <li><a href="tutorial.html">Tutorial</a></li>
-        <li><a href="video.html">Video</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <img src="images/ufv-logo.jpeg" alt="UFV Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="ethics.html">Ethics</a></li>
+            <li><a href="legal.html" class="active">Legal</a></li>
+            <li><a href="tutorial.html">Tutorial</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 <section class="hero">
 <h1>Legal & Security</h1>
-<p>UFVCoin is secure, ethical, and compliant with Canadian crypto regulations.</p>
+<p>UFVWealth and UFVCoin prioritize safety, privacy, and compliance — giving UFV stakeholders peace of mind.</p>
 </section>
 
 <section class="overview">
+<h2>Security Features</h2>
 <ul>
-    <li>Transactions are private and encrypted</li>
-    <li>Coin usage follows tax rules for campus purchases</li>
-    <li>Fraud detection and misuse prevention</li>
-    <li>Only UFV stakeholders can participate</li>
+    <li><i class="fa-solid fa-lock"></i> Encrypted transactions for privacy and safety</li>
+    <li><i class="fa-solid fa-shield-alt"></i> Fraud detection and misuse prevention</li>
+    <li><i class="fa-solid fa-user-check"></i> Verified participation for UFV students, staff, and alumni only</li>
+    <li><i class="fa-solid fa-file-invoice-dollar"></i> Tax-compliant usage for campus purchases</li>
 </ul>
+
+<h2>Quick Legal Tips</h2>
+<ul>
+    <li>Keep your UFVCoin account secure — never share passwords</li>
+    <li>Check your dashboard for transaction history</li>
+    <li>Use coins only for authorized campus services</li>
+    <li>Report suspicious activity immediately</li>
+</ul>
+
+<h2>FAQs</h2>
+<div class="faq">
+    <button class="accordion">Do I need to pay taxes on UFVCoin?</button>
+    <div class="panel">
+        <p>Campus transactions are managed under UFV’s accounting; regular tax rules apply only for external exchanges.</p>
+    </div>
+
+    <button class="accordion">Who can participate?</button>
+    <div class="panel">
+        <p>Only verified UFV students, staff, and alumni with UFVWealth accounts can access UFVCoin.</p>
+    </div>
+
+    <button class="accordion">What if I lose my coins?</button>
+    <div class="panel">
+        <p>UFVWealth has secure backups; contact support to recover lost coins safely.</p>
+    </div>
+</div>
 </section>
+
+<script>
+// Accordion for FAQs
+var acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+}
+</script>
 
 <footer>
 <p>&copy; 2026 UFVCoin Project | Built by Group 8</p>
