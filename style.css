@@ -38,8 +38,12 @@ nav ul {
     flex-wrap: wrap;
 }
 
+nav {
+    margin-left: 180px;
+    margin-bottom: 60px;
+}
 nav ul li {
-    margin: 60px 15px;
+    margin: 30px 15px;
 }
 
 nav ul li a {
