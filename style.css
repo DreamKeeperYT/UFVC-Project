@@ -1,153 +1,268 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
 }
 
 body {
-    background-color: #f0e6ff;
-    color: #2d004b;
-    line-height: 1.6;
+  background-color: #f0e6ff;
+  color: #2d004b;
+  line-height: 1.6;
 }
 
 /* Header & Navigation */
 header {
-    background: linear-gradient(90deg, #4B0082, #800080);
-    color: white;
-    padding: 15px 0;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: linear-gradient(90deg, #4b0082, #800080);
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header .logo {
-    height: 210px;
-    width: 400px;
-    max-width: 90%;  
-    object-fit: contain; 
-    margin: -60px auto;  
-    margin-top: -12px;  
-    margin-left: -99px;  
+  height: 210px;
+  width: 400px;
+  max-width: 90%;
+  object-fit: contain;
+  margin: -60px auto;
+  margin-top: -12px;
+  margin-left: -99px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: -100px;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  flex-wrap: wrap;
 }
 
 nav {
-    margin-left: 180px;
-    margin-bottom: 60px;
+  margin-left: 180px;
+  margin-bottom: 60px;
 }
 nav ul li {
-    margin: 30px 15px;
+  margin: 30px 15px;
 }
 
 nav ul li a {
-    background-color: #6a0dad;
-    color: #fff;
-    padding: 10px 11px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.4s;
+  background-color: #6a0dad;
+  color: #fff;
+  padding: 10px 11px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
 }
 
-nav ul li a:hover, nav ul li a.active {
-    background-color: #FFD700;
-    color: #4B0082;
-    transform: scale(1.1);
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #ffd700;
+  color: #4b0082;
+  transform: scale(1.1);
 }
 
 .overview {
-    margin-top: 50px;   
-    padding: 20px;      
-    background-color: #f7f0ff; 
-    border-radius: 10px;        
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f7f0ff;
+  border-radius: 10px;
 }
 
 .overview ul {
-    list-style: disc inside;
-    padding-left: 20px;  
-    line-height: 1.8;    
-    color: #2d004b;      
-    font-size: 1.1rem;
+  list-style: disc inside;
+  padding-left: 20px;
+  line-height: 1.8;
+  color: #2d004b;
+  font-size: 1.1rem;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #4b0082, #800080);
-    color: #FFD700;
-    text-align: center;
-    padding: 80px 20px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #4b0082, #800080);
+  color: #ffd700;
+  text-align: center;
+  padding: 80px 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.hero h1 { font-size: 3rem; margin-bottom: 20px; text-shadow: 2px 2px #2d004b; }
-.hero p { font-size: 1.2rem; }
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #2d004b;
+}
+.hero p {
+  font-size: 1.2rem;
+}
 
 /* Main Content */
-main { max-width: 1200px; margin: 0 auto; padding: 20px; }
-section h2 { color: #4B0082; margin-top: 30px; margin-bottom: 10px; border-bottom: 3px solid #FFD700; padding-bottom: 5px; }
-section p { margin-bottom: 15px; font-size: 1rem; }
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+section h2 {
+  color: #4b0082;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #ffd700;
+  padding-bottom: 5px;
+}
+section p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
 
 /* Buttons */
-button, .btn {
-    background: linear-gradient(to right, #4b0082, #800080);
-    color: #fff;
-    padding: 12px 25px;
-    font-size: 1rem;
-    border-radius: 15px;
-    border: none;
-    cursor: pointer;
-    transition: 0.4s;
+button,
+.btn {
+  background: linear-gradient(to right, #4b0082, #800080);
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
 }
-button:hover, .btn:hover {
-    background: linear-gradient(to right, #FFD700, #fff700);
-    color: #4B0082;
-    transform: scale(1.1);
+button:hover,
+.btn:hover {
+  background: linear-gradient(to right, #ffd700, #fff700);
+  color: #4b0082;
+  transform: scale(1.1);
 }
 
 /* Forms */
-form { background-color: #fff; padding: 25px; border-radius: 15px; margin: 20px 0; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-form input, form select, form textarea { width: 100%; padding: 12px; margin: 10px 0 20px 0; border-radius: 10px; border: 1px solid #ccc; font-size: 1rem; }
-form input[type="submit"] { background: linear-gradient(to right, #4b0082, #800080); color: #fff; border: none; cursor: pointer; transition: 0.4s; }
-form input[type="submit"]:hover { background: linear-gradient(to right, #FFD700, #fff700); color: #4B0082; transform: scale(1.05); }
+form {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+form input[type="submit"] {
+  background: linear-gradient(to right, #4b0082, #800080);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+form input[type="submit"]:hover {
+  background: linear-gradient(to right, #ffd700, #fff700);
+  color: #4b0082;
+  transform: scale(1.05);
+}
 
 /* Tables */
-table { width: 100%; border-collapse: collapse; margin: 20px 0; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-table th, table td { border: 1px solid #ccc; padding: 12px; text-align: center; }
-table th { background-color: #4B0082; color: #FFD700; font-size: 1.1rem; }
-table tr:nth-child(even) { background-color: #e6d4ff; }
-table tr:hover { background-color: #d1b3ff; font-weight: bold; }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+table th,
+table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+table th {
+  background-color: #4b0082;
+  color: #ffd700;
+  font-size: 1.1rem;
+}
+table tr:nth-child(even) {
+  background-color: #e6d4ff;
+}
+table tr:hover {
+  background-color: #d1b3ff;
+  font-weight: bold;
+}
 
 /* Footer */
-footer { background-color: #2d004b; color: white; text-align: center; padding: 25px; margin-top: 40px; }
-footer a { color: #FFD700; }
-footer a:hover { text-decoration: underline; }
+footer {
+  background-color: #2d004b;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+footer a {
+  color: #ffd700;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul { flex-direction: column; text-align: center; }
-    nav ul li { margin: 10px 0; }
-    .hero h1 { font-size: 2rem; }
-    .hero p { font-size: 1rem; }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
 /* UFV Watermark Background */
 body::before {
-    content: "";
-    position: fixed;        /* stays in place when scrolling */
-    top: 50%;               /* center vertically */
-    left: 50%;              /* center horizontally */
-    width: 900px;
-    height: 900px;
-    background: url('images/ufv-logo-bg.png') center/contain no-repeat;
-    opacity: 0.15;          /* adjust for visibility */
-    transform: translate(-50%, -50%) rotate(0deg);
-    pointer-events: none;    /* so it doesn't block clicks */
-    z-index: 9999;           /* above everything */
+  content: "";
+  position: fixed; /* stays in place when scrolling */
+  top: 50%; /* center vertically */
+  left: 50%; /* center horizontally */
+  width: 900px;
+  height: 900px;
+  background: url("images/ufv-logo-bg.png") center/contain no-repeat;
+  opacity: 0.15; /* adjust for visibility */
+  transform: translate(-50%, -50%) rotate(0deg);
+  pointer-events: none; /* so it doesn't block clicks */
+  z-index: 9999; /* above everything */
+}
+
+.transactions {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.transactions h2 {
+  margin-bottom: 15px;
+}
+
+details {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+details[open] {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
